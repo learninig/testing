@@ -9,5 +9,6 @@ public class HomeService {
 	public void service()
 	{
 		repository.service();
+		System.out.println("1 in service");
 	}
 }
