@@ -29,6 +29,7 @@ public class HomeController {
 		System.out.println("Delete some spaces");
 		service.service();
 		System.out.println(122222);
+		System.out.println(122222);
 		return "home";
 	}
 	
