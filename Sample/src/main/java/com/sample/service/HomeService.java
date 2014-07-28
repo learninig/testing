@@ -11,7 +11,13 @@ public class HomeService {
 	HomeRepository repository;
 	public void service(){
 		repository.service();
+
+		System.out.println("1 in service");
+		System.out.println("2 in service");
+		System.out.println("3 in service");
+
 		System.out.println("now in service");
+
 	}
 
 }
