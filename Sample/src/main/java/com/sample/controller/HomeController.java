@@ -38,6 +38,7 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		System.out.println("Delete some spaces");
+		service.service();
 		return "home";
 	}
 	
