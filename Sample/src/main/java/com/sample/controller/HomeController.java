@@ -30,6 +30,8 @@ public class HomeController {
 		service.service();
 		System.out.println(122222);
 		System.out.println(122222);
+		System.out.println(22);
+		
 		return "home";
 	}
 	
