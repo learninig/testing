@@ -7,6 +7,7 @@ public class HomeRepository {
 
 	public void service() {
 		System.out.println("this is repository service method....");
+		System.out.println("now in repository");
 		
 	}
 
