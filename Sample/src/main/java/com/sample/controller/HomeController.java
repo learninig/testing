@@ -21,24 +21,13 @@ public class HomeController {
 	@Autowired
 	HomeDao dao;
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(HomeController.class);
-
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
-		logger.info("Added new statement");
-		
 
-System.out.println("we r at line number 26 and in home controller home method");
-System.out.println("empty");
-     System.out.println("I have added one SOP at line no. 29");
-     System.out.println("I have added one SOP at line no. 30");
-     
-     Message message=new Message();
-     message.setId("12345");
-     message.setMessage("this is message related to 12345");
-     dao.print(message);
+		Message message = new Message();
+		message.setId("12345");
+		message.setMessage("this is message related to 12345");
+		dao.print(message);
 		return "home";
 	}
 
