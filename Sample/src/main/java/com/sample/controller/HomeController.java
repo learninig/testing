@@ -4,7 +4,6 @@ import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -25,6 +24,7 @@ public class HomeController {
 
 		Message message = new Message();
 		message.setId("12345");
+		System.out.println("123");
 		message.setMessage("this is message related to 12345");
 		homeService.print(message);
 		homeService.calculate(23490,5,7);
