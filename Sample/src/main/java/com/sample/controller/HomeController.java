@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.sample.dao.HomeDao;
 import com.sample.domain.Message;
+import com.sample.service.HomeService;
 
 /**
  * Handles requests for the application home page.
@@ -18,7 +18,7 @@ import com.sample.domain.Message;
 public class HomeController {
 
 	@Autowired
-	HomeDao homeService;
+	HomeService homeService;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
@@ -26,15 +26,7 @@ public class HomeController {
 		Message message = new Message();
 		message.setId("12345");
 		message.setMessage("this is message related to 12345");
-
-		//dao.print(message);
-		
-		
-		
-		System.out.println("we r in homecontroller");
-
 		homeService.print(message);
-
 		return "home";
 	}
 
