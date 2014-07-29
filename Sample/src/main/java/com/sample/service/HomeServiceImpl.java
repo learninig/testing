@@ -15,4 +15,10 @@ public class HomeServiceImpl implements HomeService {
 	public void print(Message message) {
 		homeDao.print(message);
 	}
+	@Override
+	public void calculate(float principal, int time, float rate) {
+		float si=(principal*time*rate)/100;
+		System.out.println("Your Simple Interest Is : "+si);
+		
+	}
 }

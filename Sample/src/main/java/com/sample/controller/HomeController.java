@@ -21,19 +21,19 @@ public class HomeController {
 	HomeService homeService;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	public String home(Locale locale) {
 
 		Message message = new Message();
 		message.setId("12345");
 		message.setMessage("this is message related to 12345");
 		homeService.print(message);
+		homeService.calculate(23490,5,7);
 		return "home";
 	}
 
 	public void calculate() {
-		System.out.println("sffssafasfasfasfsa");
 		System.out.println("Here some calculation");
 		System.out.println("Here employee salary is calculated");
-	System.out.println("only commit");
+		System.out.println("only commit");
 	}
 }
