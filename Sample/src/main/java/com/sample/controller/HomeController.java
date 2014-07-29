@@ -28,12 +28,9 @@ public class HomeController {
 		message.setMessage("this is message related to 12345");
 		homeService.print(message);
 		homeService.calculate(23490,5,7);
+		System.out.println("I have deleted one calculate method from 'HomeController'");
 		return "home";
+		
 	}
-
-	public void calculate() {
-		System.out.println("Here some calculation");
-		System.out.println("Here employee salary is calculated");
-		System.out.println("only commit");
-	}
+	
 }
