@@ -8,14 +8,11 @@ public class HomeDao {
 		System.out.println("this is my service");
 	}
 
+
 	public void print(Message message) {
 		System.out.println(message);
 		System.out.println("now we r in print method of dao  class");
-		
-	}
-	public void addMethod()
-	{
-		System.out.println("I have added one method in HomeDao.java of com.sample.dao package");
+		System.out.println("It is not possible to create a method inside the method,so i have deleted");
 	}
 
 }
