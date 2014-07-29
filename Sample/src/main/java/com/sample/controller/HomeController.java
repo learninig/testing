@@ -23,7 +23,11 @@ public class HomeController {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		logger.info("Added new statement");
 		
+
+System.out.println("we r at line number 26 and in home controller home method");
+System.out.println("empty");
      System.out.println("I have added one SOP at line no. 26");
+
 		return "home";
 	}
 
