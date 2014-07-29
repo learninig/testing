@@ -21,4 +21,10 @@ public class Message {
 		this.message = message;
 	}
 
+	@Override
+	public String toString() {
+		return "Message [id=" + id + ", message=" + message + "]";
+	}
+	
+
 }
