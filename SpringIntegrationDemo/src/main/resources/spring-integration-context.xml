@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:int="http://www.springframework.org/schema/integration"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration
+		http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<int:channel id="requestchannel" />
+	<int:service-activator input-channel="requestchannel">
+		<bean class="com.spring.integration.service.SpringServiceDemo" />
+	</int:service-activator>
+	<int:service-activator input-channel="requestchannel"
+		ref="calculateService" method="calculate" />
+	<int:service-activator input-channel="requestchannel"
+		ref="calculateService" method="seniorCitizen" />
+	<bean id="calculateService" class="com.spring.integration.service.CalculateService" />
+</beans>
