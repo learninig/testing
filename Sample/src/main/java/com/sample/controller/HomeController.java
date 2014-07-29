@@ -10,9 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.sample.dao.HomeDao;
-import com.sample.domain.Message;
-
 /**
  * Handles requests for the application home page.
  */
@@ -30,5 +27,9 @@ public class HomeController {
 		dao.print(message);
 		return "home";
 	}
-
+public void calculate()
+	{
+	System.out.println("Here some calculation");
+	System.out.println("Here employee salary is calculated");
+	}
 }

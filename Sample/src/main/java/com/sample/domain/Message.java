@@ -21,11 +21,4 @@ public class Message {
 		this.message = message;
 	}
 
-	@Override
-	public String toString() {
-		System.out.println("now we r in message class toString method");
-		return "Message [id=" + id + ", message=" + message + "]";
-	}
-	
-
 }
