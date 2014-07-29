@@ -31,6 +31,7 @@ public class HomeController {
 	}
 
 	public void calculate() {
+		System.out.println("sffssafasfasfasfsa");
 		System.out.println("Here some calculation");
 		System.out.println("Here employee salary is calculated");
 	System.out.println("only commit");
